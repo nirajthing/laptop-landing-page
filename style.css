@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manjari', sans-serif;
+}
+.logoPic{
+    height: 110px;
+    width: 100px;
+}
+
+header{
+    
+    display:flex;
+    width: 90%;
+    margin: auto;
+}
+
+.logo-container,
+.nav-links,
+.cart
+{
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #5f5f79;
+    
+}
+
+.nav-link:hover{
+color: black;
+}
+
+.cartPic{
+    height: 70px;
+    height: 70px;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+nav{
+    flex: 1;
+}
+
+.introduction
+{
+    flex: 1;
+    
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 70vh;
+    
+}
+
+.cover{
+    flex: 1;
+   
+}
+.cover img{
+    height: 60vh;
+    filter: drop-shadow(0px 3px 5px black);
+    animation: drop 1s ease;
+    
+}
+
+.intro-text h1{
+    font-size: 45px;
+    margin-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.intro-text p{
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cta button:hover{
+    background-color:rgb(211, 129, 115); 
+    transition: 0.5s;
+    
+}
+.cta-select{
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 50px;
+    background-color:  darkslategray;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.cta-add{
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 50px;
+    background-color:  rgb(198, 235, 203);
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+
+}
+
+.big-ecl{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.6;
+    height: 76%;
+}
+
+.medium-ecl{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    opacity: 0.6;
+    height: 60%;
+}
+
+.small-ecl{
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+
+.laptop-select{
+    width: 15%;
+    display: flex;
+    position: absolute;
+    right: 18%;
+    justify-content: space-around;
+
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .introduction{
+        
+        text-align: center;
+    }
+    .cover{
+        margin: auto;
+    }
+    .laptop-select{
+        right: 30%;
+        width:40%;
+        
+    }
+}
